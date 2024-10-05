@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                // Клонируем репозиторий
+                // Клонируем репозиторий с GitHub
                 git 'https://github.com/MounTemed/test_pipeline.git'
             }
         }
@@ -26,3 +26,4 @@ pipeline {
         }
     }
 }
+
