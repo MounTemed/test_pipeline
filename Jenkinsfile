@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Клонируем репозиторий с GitHub
-                git 'https://github.com/MounTemed/test_pipeline.git'
+                git branch: 'main', url: 'https://github.com/MounTemed/test_pipeline.git'
             }
         }
         stage('Build Docker Image') {
@@ -26,4 +26,3 @@ pipeline {
         }
     }
 }
-
